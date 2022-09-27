@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -26,24 +26,33 @@
         <h2>Examen de Rescate y mejora</h2>
       </div>
       <div class="innertxt">
-        <div class=""><strong>NORMAL GROUPS</strong>: <bauhaus><b>bauhaus</b></bauhaus> <span
-            class="th th-right-arrow"></span>
-          <brutalism><b>brutalism</b></brutalism> <span class="th th-right-arrow"></span>
-          <classical><b>classical</b></classical> <span class="th th-right-arrow"></span>
-          <gothic><b>gothic</b></gothic> <span class="th th-right-arrow"></span>
-          <industrial><b>industrial</b></industrial> <span class="th th-right-arrow"></span>
-          <modern><b>modern</b></modern>
-          </p><strong>PREMIUM GROUPS</strong>: <artdeco><b>art deco</b></artdeco> <span
-            class="th th-right-arrow"></span>
-          <hightech><b>high tech</b></hightech> <span class="th th-right-arrow"></span>
-          <rococo><b>rococo</b></rococo> <span class="th th-right-arrow"></span>
-          <victorian><b>victorian</b></victorian>
-        
-    </div>
-  </div>
+        <div class=""><strong>Contesta</strong>: 
+        </div>
+        <center>
+          <div id="uno">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe59XcR4-SY5C7Du_5tqRjYjsyRB0SWzj3EoTYLJ6jQiCFadA/viewform?embedded=true" width="640" height="2448" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+
+          <div id="dos">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc-IcsSCK8CfRZ14Nrcd3Jy6vPMEDn_mN_YwvL71AFowepYbw/viewform?embedded=true" width="640" height="2448" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
+          </div>
+        </center>
+      </div>
 
 
-
+<script>
+  document.addEventListener("DOMContentLoaded", function(){
+   var aleatorio = Math.floor(generateRandom(2));
+   if (aleatorio == 1) {
+    document.getElementById("uno").style.display = "block"
+   } else {
+    document.getElementById("dos").style.display = "block"
+   }
+});
+function generateRandom(max){
+    return Math.random() * max;
+}
+</script>
 </body>
 
 </html>
